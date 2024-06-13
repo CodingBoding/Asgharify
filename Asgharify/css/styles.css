@@ -221,7 +221,7 @@ a {
 }
 
 .btn--primary {
-  background-color: var(--color-primary);
+  background: var(--color-primary);
   color: #fff;
 }
 
@@ -230,7 +230,7 @@ a {
 }
 
 .btn--secondary {
-  background-color: var(--color-secondary);
+  background: var(--color-secondary);
   color: #fff;
 }
 
@@ -299,6 +299,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -675,7 +676,7 @@ a {
 
 .nav__item > a {
   color: #d2d0db;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
 .nav__item > a:hover {
@@ -779,4 +780,28 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* Features */
+
+.feature {
+  gap: 4rem 2rem;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
