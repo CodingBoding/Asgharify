@@ -125,3 +125,6 @@ Asgharify/Moshify/images/testimonial.jpg
 Asgharify/Moshify/images/wordpress.jpg
 Asgharify/Moshify/psd/mobile.psd
 Asgharify/Moshify/psd/standard.psd
+node_modules
+package-lock.json
+package.json
